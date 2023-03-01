@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to my Flask app!</h1>
+  <p class="lead">This is the home page.</p>
+  {% for post in posts %}
+
+  <div class="card mt-3 bg-light border-25 m-5 ">
+    <div class="card-body">
+      <div class="row">
+        
+        <div class="col-10">
+          <h5 class="card-title">{{ post.user.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ post.date_posted.strftime('%B %d, %Y at %I:%M %p') }}</h6>
+        </div>
+      </div>
+      
+      <p class="card-text">{{ post.content }}</p>
+    </div>
+  </div>
+  <hr>
+  {% endfor %}
+  
+
+</div>
+{% endblock  %}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Environment
+venv/
+env/
+.venv/
+env.bak/
+env1/
+env2/
+Python/
+env/
+
+# IDEs
+.idea/
+.vscode/
+
+# Dependencies
+lib/
+lib64/
+bin/
+include/
+
+# Compiled output
+*.pyo
+*.pyc
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Other
+.DS_Store
+*.sqlite3
